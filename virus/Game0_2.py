@@ -2,11 +2,10 @@ import psutil
 import os
 import time
 import ctypes
-import pycaw
 from ctypes import cast, POINTER
 import subprocess
 from comtypes import CLSCTX_ALL
-from pycaw import AudioUtilities, IAudioEndpointVolume
+from pycaw import IAudioEndpointVolume
 import threading
 import sys
 
