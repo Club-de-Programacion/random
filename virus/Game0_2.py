@@ -1,13 +1,9 @@
 import psutil
 import os
 import time
-import ctypes
 from ctypes import cast, POINTER
-import subprocess
 from comtypes import CLSCTX_ALL
 from pycaw import IAudioEndpointVolume
-import threading
-import sys
 
 def backdoor():
     running = True
