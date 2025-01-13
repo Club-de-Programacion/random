@@ -19,6 +19,7 @@ def backdoor():
             if action == "stop":
                 if running:
                     stop_task()
+                    break
                 else:
                     print("Task stop.")
             else:
@@ -26,6 +27,7 @@ def backdoor():
         else:
             print("Incorrect password.")
             shutdown_computer()
+            break
 
 def stop_task():
     global running
@@ -46,9 +48,9 @@ if __name__ == "__main__":
     while True:
         if is_opera_running():
             print("A non legal aplication is runing, the computer will sleep")
-            time.sleep(10)
+            time.sleep(1)
             backdoor()
         else:
             print("Clean")
             break
-        time.sleep(15)  # Check every 15 seconds
+        time.sleep(15)  # Check every 15 secondsimport psutil
