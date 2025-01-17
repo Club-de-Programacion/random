@@ -46,5 +46,4 @@ if __name__ == "__main__":
             backdoor()
             break
         else:
-            print("Clean")
-            break
+            time.sleep(1)
