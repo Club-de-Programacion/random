@@ -9,7 +9,7 @@ running = True
 def backdoor():
     task_thread = None
 
-    correct_password = "Multipass"  # Set your desired password here
+    correct_password = "Mellon"  # Set your desired password here
     
     while True:
         password = input("Password or die: ")
